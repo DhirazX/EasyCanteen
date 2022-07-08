@@ -32,7 +32,6 @@ if(JSON.parse(localStorage.getItem("cart"))==null){
 }
 
 function pushItem(){
-    console.log("Inside push item func");
     let loadout={
        itemName: itemName.innerText,
        itemPrice: totalPrice.innerText,

@@ -37,7 +37,7 @@
                     <div class="form-buttons">
                         <input type="submit" name="submitBtn" id="submitBtn" value="SIGN IN">
                     </div>
-                    <p class="sign-up-prompt">Dont have an account yet?<br><a href="registerPage.php" class="sign-up theme-text">Sign Up.</a></p>
+                    <p class="sign-up-prompt">Dont have an account yet?<a href="registerPage.php" class="sign-up theme-text">Sign Up.</a></p>
                 </form>
             </div>
         </div>

@@ -55,7 +55,10 @@ function changeSlide(direction){
 let userIcon = document.querySelector('.user-icon');
 let userDetails = document.querySelector('.user-profile');
 userIcon.addEventListener("click",()=>{
-    userDetails.classList.toggle('active');
-    userIcon.classList.toggle('white-icon');
+    userDetails.classList.add('active');
 });
 
+let closeBtn = document.querySelector('.user-profile-close-btn')
+closeBtn.addEventListener("click",()=>{
+    userDetails.classList.remove('active');
+});

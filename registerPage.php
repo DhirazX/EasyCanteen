@@ -46,10 +46,11 @@
             }
             else{
                 $passwordErr = "Password must be 8 characters long and must contain a digit and a uppercase alphabet";
+                $err=1;
             }
         }
     
-        if($err!='1') {
+        if($err!=1) {
             include('registerProcess.php');
         }
     

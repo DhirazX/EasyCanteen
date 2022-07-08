@@ -35,10 +35,14 @@
 .theme-text{
     color: var(--light-green);
 }
+.main-text{
+    font-weight: 600;
+    font-size: 20px;
+}
 .sub-text{
     font-size: 12px;
     margin-bottom: 10%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .label-text{
     margin: 3px;
@@ -70,11 +74,14 @@ input[type="text"],input[type="password"]{
 }
 .sign-up-prompt,.sign-in-prompt{
     font-size: 12px;
+    display: flex;
+    justify-content: center;
     margin-top: 5%;
 }
 .sign-up,.sign-in{
     font-size: 12px;
     text-decoration: none;
+    margin-left: 8px;
 }
 .sign-up-btn{
     margin-top: 150px;

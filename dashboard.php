@@ -16,20 +16,20 @@
     <title>Dashboard</title>
 </head>
 <body>
+    <div class="user-profile">
+        <i class="fa-solid fa-circle-user profile-picture green-text"></i>
+        <p class="uName"><?php echo $_SESSION['username']?></p>
+        <p class="uEmail"><?php echo $_SESSION['email']?></p>
+        <i class="fa-solid fa-xmark green-text fa-2x user-profile-close-btn"></i>
+        <form method="POST" action="logout.php">
+            <input type="submit" class="logout-btn" value="Log Out"></input>
+        </form>
+    </div>
     <div class="header">
         <img src="https://ik.imagekit.io/dzz/tr:w-300/easycanteen/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" alt="logo">
         <div class="icons">
             <a href="items/cart.php"><span class="green-text"><i class="fa-solid fa-cart-shopping cart-icon"></i></span></a>
             <span class="green-text"><i class="fa-solid fa-user user-icon"></i></span>
-        </div>
-    </div>
-    <div class="userProfileDiv">
-        <div class="user-profile">
-            <p class="uName"><?php echo $_SESSION['username']?></p>
-            <p class="uEmail"><?php echo $_SESSION['email']?></p>
-            <form method="POST" action="logout.php">
-                <input type="submit" class="logout-btn" value="Log Out"></input>
-            </form>
         </div>
     </div>
 
