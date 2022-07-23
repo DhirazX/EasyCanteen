@@ -105,7 +105,7 @@
                     <div class="form-buttons">
                         <input type="submit" name="submitBtn" id="submitBtn" value="SIGN UP" style="margin-top:10%;">
                     </div>
-                    <p class="sign-in-prompt">Already have an account?<br><a href="../ecJSversion/index.php" class="sign-in theme-text">Sign in.</a></p>
+                    <p class="sign-in-prompt">Already have an account?<br><a href="index.php" class="sign-in theme-text">Sign in.</a></p>
                 </form>
             </div>
         </div>

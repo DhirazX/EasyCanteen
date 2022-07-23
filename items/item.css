@@ -154,3 +154,29 @@ p{
     font-weight: 600;
     font-size: 16px;
 }
+
+/* reviews */
+.review-section{
+    padding-bottom: 10vh;
+}
+.review-head{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.review{
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    padding: 5vw;
+}
+.user{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-green);
+}
+.review-text{
+    color: white;
+    font-size: 14px;
+    margin-top: -5%;
+}

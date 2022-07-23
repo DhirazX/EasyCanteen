@@ -41,6 +41,14 @@
             </div>
             <div id="overlay"></div>
         </div>
+        <div class="review-section">
+            <p class="review-head">Reviews</p>
+            <div class="review">
+                <p class="user">Rajesh Hamal</p>
+                <p class="review-text">Very good excellent 👍</p>
+            </div>
+
+        </div>
     </div>
     <script src="item.js"></script>
 </body>

@@ -28,26 +28,33 @@
     <div class="header">
         <img src="https://ik.imagekit.io/dzz/tr:w-300/easycanteen/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" alt="logo">
         <div class="icons">
-            <a href="items/cart.php"><span class="green-text"><i class="fa-solid fa-cart-shopping cart-icon"></i></span></a>
+            <a href="items/cart.php"><span class="green-text"><i class="fa-solid fa-cart-shopping cart-icon"><div class="cart-indicator">0</div></i></span></a>
             <span class="green-text"><i class="fa-solid fa-user user-icon"></i></span>
         </div>
     </div>
 
     <div class="container">
         <div class="welcome-banner">
-            <p>Welcome <span class="green-text"><?php echo $_SESSION['username'];?></span></p>
-            <!-- <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/undraw_welcoming_re_x0qo_vCH9iZnEz.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1654574014749" alt="welcome"> -->
+            <p class="welcome-text">Hello, <span class="green-text"><?php echo $_SESSION['username'];?></span></p>
+            <p class="welcome-subtext">Are you hungry?</p>
+        </div>
+        <div class="slider">
+                <img name="slideImg">
+                <div class="arrows">
+                    <div class="left-arrow"><i class="fa-solid fa-angle-left icons"></i></div>
+                    <div class="right-arrow"><i class="fa-solid fa-angle-right icons"></i></div>
+                </div>
         </div>
         <div class="payment-banner">
             <p>Add a <span class="green-text"><br>payment method</span></p>
             <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/undraw_make_it_rain_iwk4_oUPw-O5yk.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525520" alt="credit card">
         </div>
         <div class="fav-section">
-            <p>Most Popular <span class="green-text"><i class="fa fa-solid fa-star"></i></span></p>
+            <p>Most Popular</p>
             <div class="fav-cards">
-                <div class="fav-card" id="daal-bhat"><a href="items/daalBhat.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/dal-bhat-recipe-local-food-260nw-583966321_WdRXfgEjs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654779704877" alt="Rice"><p>Daal Bhat<p></a></div>
-                <div class="fav-card"><a href="items/samosa.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/kabir-cheema-8T9AVksyt7s-unsplash_Fs62hdFvv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222643" alt="Samosa"><p>Samosa</p></a></div>
-                <div class="fav-card"><a href="items/chowmein.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/5bd3a3027c65045b93886002d2c788bf_Ky1WH6gLe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776367355" alt="Chowmein"><p>Chowmein</p></a></div>
+                <a href="items/daalBhat.php"><div class="fav-card" id="daal-bhat"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/dal-bhat-recipe-local-food-260nw-583966321_WdRXfgEjs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654779704877" alt="Rice"><p>Daal Bhat<span class="rating4"></span></p></div></a>
+                <a href="items/samosa.php"><div class="fav-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/kabir-cheema-8T9AVksyt7s-unsplash_Fs62hdFvv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222643" alt="Samosa"><p>Samosa<span class="rating3"></span></p></div></a>
+                <a href="items/chowmein.php"><div class="fav-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/5bd3a3027c65045b93886002d2c788bf_Ky1WH6gLe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776367355" alt="Chowmein"><p>Chowmein<span class="rating2"></span></p></div></a>
             </div>
         </div>
         <div class="stats-banner">
@@ -62,13 +69,13 @@
             
         </div>
         <div class="menu-section">
-            <p>Menu <span class="green-text"><i class="fa fa-solid fa-caret-down"></i></span></p>
+            <p>Menu</p>
             <div class="menu-cards">
-                <div class="menu-card" id="daal-bhat"><a href="items/daalBhat.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/dal-bhat-recipe-local-food-260nw-583966321_WdRXfgEjs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654779704877" alt="Rice"><p>Daal Bhat<p></a></div>
-                <div class="menu-card"><a href="items/samosa.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/kabir-cheema-8T9AVksyt7s-unsplash_Fs62hdFvv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222643" alt="Samosa"><p>Samosa</p></a></div>
-                <div class="menu-card"><a href="items/chowmein.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/5bd3a3027c65045b93886002d2c788bf_Ky1WH6gLe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776367355" alt="Chowmein"><p>Chowmein</p></a></div>
-                <div class="menu-card"><a href="items/momo.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/tek-bahadur-bj07uo3SnhM-unsplash_Gwuj-RbcWj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776280913" alt="momo"><p>Momo</p></a></div>
-                <div class="menu-card"><a href="items/friedRice.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/annie-spratt-oT7_v-I0hHg-unsplash_nTj6bMK_A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222920" alt="fried-rice"><p>Fried Rice</p></a></div>
+                <a href="items/daalBhat.php"><div class="menu-card" id="daal-bhat"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/dal-bhat-recipe-local-food-260nw-583966321_WdRXfgEjs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654779704877" alt="Rice"><p>Daal Bhat<span class="rating4"></span></p></div></a>
+                <a href="items/samosa.php"><div class="menu-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/kabir-cheema-8T9AVksyt7s-unsplash_Fs62hdFvv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222643" alt="Samosa"><p>Samosa<span class="rating4"></span></p></div></a>
+                <a href="items/chowmein.php"><div class="menu-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/5bd3a3027c65045b93886002d2c788bf_Ky1WH6gLe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776367355" alt="Chowmein"><p>Chowmein<span class="rating2"></span></p></div></a>
+                <a href="items/momo.php"><div class="menu-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/tek-bahadur-bj07uo3SnhM-unsplash_Gwuj-RbcWj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776280913" alt="momo"><p>Momo<span class="rating4"></span></p></div></a>
+                <a href="items/friedRice.php"><div class="menu-card"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-200/annie-spratt-oT7_v-I0hHg-unsplash_nTj6bMK_A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222920" alt="fried-rice"><p>Fried Rice<span class="rating4"></span></p></div></a>
                 <div class="menu-card"></div>
                 <div class="menu-card"></div>
                 <div class="menu-card"></div>
@@ -89,13 +96,6 @@
                 <p><span class="title-text">Cashless Transactions</span></p>
                 <p class="text">No cash? No problem, We've got your back with online payment</p>
             </div>
-        </div>
-        <div class="slider">
-                <img name="slideImg">
-                <div class="arrows">
-                    <div class="left-arrow"><i class="fa-solid fa-angle-left icons"></i></div>
-                    <div class="right-arrow"><i class="fa-solid fa-angle-right icons"></i></div>
-                </div>
         </div>
     </div>
     <div class="form-footer">

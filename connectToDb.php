@@ -1,7 +1,11 @@
 <?php
-    $servername = "localhost";
-    $server_user = "root";
-    $server_password = "";
+    // $servername = "localhost";
+    // $server_user = "root";
+    // $server_password = "";
+    
+    $servername = "sql100.epizy.com";
+    $server_user = "epiz_31889662";
+    $server_password = "AXLvqIMgchve";
 
     // Create connection
     $conn = mysqli_connect($servername, $server_user, $server_password);
@@ -16,7 +20,9 @@
     if (!mysqli_query($conn, $sql)) {
         echo "Error creating database: " . mysqli_error($conn);
     }
-    $dbname='ec_users';
+    // $dbname='ec_users';
+    $dbname='epiz_31889662_ec';
+
     $conn = mysqli_connect($servername, $server_user, $server_password,$dbname);
     $sql = "CREATE TABLE IF NOT EXISTS `users` (
         `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT,
