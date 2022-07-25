@@ -40,12 +40,12 @@
     width: 100%;
     padding: 0 10vw 0 10vw;
 }
-.item img{
+.item-img{
     width: 100%;
     margin-top: 15%;
     border-radius: 5px;
 }
-.item p{
+.item-details p{
     color: var(--text-color);
     font-size: 20px;
 }
@@ -90,6 +90,7 @@ p{
     border: none;
     border-radius: 5px;
     margin: 5px 0;
+    cursor: pointer;
 }
 #go-to-cart{
     margin-bottom: 40px;
@@ -111,7 +112,7 @@ p{
 .modal{
     color: var(--text-color);
     background-color: var(--light-gray);
-    padding: 10% 5%;
+    padding: 10% 8%;
     border-radius: 15px;
     text-align: center;
     position: fixed;
@@ -204,7 +205,72 @@ p{
     color: var(--text-color);
     border: 2px solid var(--light-green);
     margin-bottom: 10px;
+    padding: 5px;
 }
 .submit-review{
     width: 100%;
+}
+
+@media only screen and (min-width:600px){
+    .item-wrap{
+        display: flex;
+        padding-top: 5%;
+    }
+    .item-img{
+        width: 50%;
+        margin-top: 0;
+        max-height: 50vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .item-details-wrap{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .item-details{
+        background-color: var(--light-gray);
+        width: 100%;
+        margin-top: 0;
+    }
+    .buttons-wrap{
+        width: 100%;
+    }
+    #go-to-cart{
+        margin-bottom: 0;
+    }
+    .item-details p{
+        font-size: 22px;
+    }
+    .review-head{
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    .review-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+    .review{
+        width: 48%;
+        padding: 3vh 5vw;
+        margin: 0;
+    }
+    .add-review{
+        margin-top: 3%;
+    }
+    .modal-text{
+        font-size: 20px;
+    }
+    .modal{
+        padding: 5% 5%;
+    }
+    .check-icon{
+        font-size: 60px;
+    }
 }

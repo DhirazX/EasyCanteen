@@ -75,43 +75,45 @@
     <title>Easy Canteen</title>
 </head>
 <body>
-    <div class="front-banner">
-        <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-600/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" class="logo">
-        <p>No more boring queues</p>
-    </div>
-    <div class="container">
-        <div class="form-section">
-            <p class="main-text theme-text">Create a new account</p>
-            <p class="sub-text">Thank you for choosing<br>Easy Canteen</p>
-            <div class="form-wrapper">
-                <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <div class="wrapper">
+        <div class="front-banner">
+            <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-600/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" class="logo">
+            <p>No more boring queues</p>
+        </div>
+        <div class="container">
+            <div class="form-section">
+                <p class="main-text theme-text">Create a new account</p>
+                <p class="sub-text">Thank you for choosing<br>Easy Canteen</p>
+                <div class="form-wrapper">
+                    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-                    <label for="username" class="label-text theme-text">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Username">
-                    <p class="err"><?php echo $usernameErr?></p>
+                        <label for="username" class="label-text theme-text">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <p class="err"><?php echo $usernameErr?></p>
 
-                    <label for="email" class="label-text theme-text">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Email">
-                    <p class="err"><?php echo $emailErr?></p>
-                    
-                    <label for="password" class="label-text theme-text">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <p class="err"><?php echo $passwordErr?></p>
+                        <label for="email" class="label-text theme-text">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <p class="err"><?php echo $emailErr?></p>
+                        
+                        <label for="password" class="label-text theme-text">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <p class="err"><?php echo $passwordErr?></p>
 
-                    <label for="confirmPassword" class="label-text theme-text">Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
-                    <p class="err"><?php echo $confirmPasswordErr?></p>
+                        <label for="confirmPassword" class="label-text theme-text">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                        <p class="err"><?php echo $confirmPasswordErr?></p>
 
-                    <div class="form-buttons">
-                        <input type="submit" name="submitBtn" id="submitBtn" value="SIGN UP" style="margin-top:10%;">
-                    </div>
-                    <p class="sign-in-prompt">Already have an account?<br><a href="index.php" class="sign-in theme-text">Sign in.</a></p>
-                </form>
+                        <div class="form-buttons">
+                            <input type="submit" name="submitBtn" id="submitBtn" value="SIGN UP" style="margin-top:10%;">
+                        </div>
+                        <p class="sign-in-prompt">Already have an account?<br><a href="index.php" class="sign-in theme-text">Sign in.</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <div class="form-footer">
+    <!-- <div class="form-footer">
         <p>Copyright @2022</p>
-    </div>
+    </div> -->
 </body>
 </html>

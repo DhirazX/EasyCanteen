@@ -3,10 +3,10 @@ let i = 0;
 let images = [];
 var time = 6000;
 
-images[0] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-600/banner4_CrH63wAta.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658576178438';
-images[1] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-600/banner1alter_-HvQjSllx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658574614531';
-images[2] = 'https://ik.imagekit.io/dzz/tr:w-600/easycanteen/banner2_dhIN6tX_iM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658573982931';
-images[3] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-600/banner3_1__x84lTnIF0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658575193170';
+images[0] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-1000/banner4_CrH63wAta.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658576178438';
+images[1] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-1000/banner1alter_-HvQjSllx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658574614531';
+images[2] = 'https://ik.imagekit.io/dzz/tr:w-1000/easycanteen/banner2_dhIN6tX_iM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658573982931';
+images[3] = 'https://ik.imagekit.io/dzz/easycanteen/tr:w-1000/banner3_1__x84lTnIF0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1658575193170';
 
 slider();
 function slider(){

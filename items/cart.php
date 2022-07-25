@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="../dashboard.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" alt="logo"></a>
+        <a href="../dashboard.php"><img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/logo_CYI5nkEOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654571525480" alt="logo" class="logo"></a>
     </div>
     <div class="container">
         <div class="cart-head">

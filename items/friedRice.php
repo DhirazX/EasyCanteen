@@ -20,23 +20,27 @@
         <a href="cart.php"><span class="green-text"><i class="fa-solid fa-cart-shopping cart-icon"></i></span></a>
     </div>
     <div class="container">
-        <div class="item">
-            <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-300/annie-spratt-oT7_v-I0hHg-unsplash_nTj6bMK_A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222920" alt="Fried Rice">
+    <div class="item-wrap">
+            <img src="https://ik.imagekit.io/dzz/easycanteen/tr:w-600/annie-spratt-oT7_v-I0hHg-unsplash_nTj6bMK_A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1654776222920" alt="Fried Rice" class="item-img">
 
-            <div class="item-details">
-                <p><span class="theme-text">Item </span>: <span class="itemName">Fried Rice</span></p>
-                
-                <p><span class="theme-text">Price </span>: Rs. <span class="itemPrice">75</span></p>
-                <p><span class="theme-text">Qty </span>: <span class="itemQty">1</span><button id="addQty" type="button">+</button><button id="subQty" type="button">-</button></p>
-                <p><span class="theme-text">Total </span>: Rs. <span class="totalPrice">75</span></p></p>
+            <div class="item-details-wrap">
+                <div class="item-details">
+                    <p><span class="theme-text">Item </span>: <span class="itemName">Fried Rice</span></p>
+                    
+                    <p><span class="theme-text">Price </span>: Rs. <span class="itemPrice">50</span></p>
+                    <p><span class="theme-text">Qty </span>: <span class="itemQty">1</span><button id="addQty" type="button">+</button><button id="subQty" type="button">-</button></p>
+                    <p><span class="theme-text">Total </span>: Rs. <span class="totalPrice">50</span></p>
+                </div>
+                <div class="buttons-wrap">
+                <p><button type="button" id="add-to-cart" class="general-btn">Add to Cart</button></p>
+                <p><button type="button" id="go-to-cart" class="general-btn">Go to Cart</button></p> 
+                </div>    
             </div>
-
-            <p><button type="button" id="add-to-cart" class="general-btn">Add to Cart</button></p>
-            <p><button type="button" id="go-to-cart" class="general-btn">Go to Cart</button></p> 
-            
+        </div>
+        <div class="item">
             <div class="modal">
                 <i class="fa-solid fa-circle-check check-icon"></i>
-                <div class="modal-text">Item has been added to cart</div>
+                <div class="modal-text">Item has been<br>added to cart</div>
                 <button class="modal-btn" type="button">Okay</button>
             </div>
             <div id="overlay"></div>
