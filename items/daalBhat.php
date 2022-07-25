@@ -44,10 +44,27 @@
         <div class="review-section">
             <p class="review-head">Reviews</p>
             <div class="review">
-                <p class="user">Rajesh Hamal</p>
+                <p class="user">Shrayash<span class="rating4"></span></p>
                 <p class="review-text">Very good excellent 👍</p>
             </div>
-
+            <div class="review">
+                <p class="user">dzz<span class="rating3"></span></p>
+                <p class="review-text">I would have rated higher but parwal sucks.</p>
+            </div>
+            <div class="add-review">
+                <p>Leave a review</p>
+                <form>
+                    <div class="stars">
+                        <i class="fa-regular fa-star green-text star"></i>
+                        <i class="fa-regular fa-star green-text star"></i>
+                        <i class="fa-regular fa-star green-text star"></i>
+                        <i class="fa-regular fa-star green-text star"></i>
+                        <i class="fa-regular fa-star green-text star"></i>
+                    </div>
+                    <textarea maxlength="50" class="review-input"></textarea>
+                    <input type="submit" class="submit-review general-btn" value="Post Review"></input>
+                </form>
+            </div>
         </div>
     </div>
     <script src="item.js"></script>

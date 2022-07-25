@@ -63,4 +63,44 @@ modalBtn.addEventListener("click",()=>{
     overlay.classList.remove("active");
 });
 
+//review
+const rating4 = document.querySelectorAll(".rating4");
+rating4.forEach((r)=>{
+    r.innerHTML = `<i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>`;
+});
+
+const rating3 = document.querySelectorAll(".rating3");
+rating3.forEach((r)=>{
+    r.innerHTML = `<i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>`;
+});
+
+const rating2 = document.querySelectorAll(".rating2");
+rating2.forEach((r)=>{
+    r.innerHTML = `<i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>`;
+});
+
+
+//review input
+const stars = document.querySelectorAll(".star");
+for(let i=0;i<5;i++){
+    stars[i].addEventListener("click",function(){
+        console.log("Inside first loop",i);
+        for(j=0;j<=i;j++){
+            console.log("Inside second loop");
+            stars[j].classList.add("fa-solid");
+        }
+    });
+}
 
