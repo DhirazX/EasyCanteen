@@ -29,8 +29,8 @@
     border-bottom: 2px solid var(--light-green);
 }
 .header img{
-    height: 50%;
-    /* height: 30px; */
+    /* height: 50%; */
+    width: 70px;
 }
 .icons{
     display: flex;
