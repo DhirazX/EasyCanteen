@@ -128,8 +128,9 @@ input[type="text"],input[type="password"]{
         height: 100vh;
         padding:  10%;
     }
-    .logo{
-        height: 20%;
+    .header img{
+        /* height: 30%; */
+        width: 30%;
     }
     .main-text{
         font-size: 25px;
