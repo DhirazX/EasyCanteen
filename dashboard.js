@@ -22,6 +22,7 @@ function slider(){
     setTimeout(slider,time);
 }
 
+///////////////////////////////////////////
 
 
 const leftArrow = document.querySelector(".left-arrow");
@@ -51,7 +52,8 @@ function changeSlide(direction){
 
 }
 
-//USER PROFILE
+
+///////////  USER PROFILE
 let userIcon = document.querySelector('.user-icon');
 let userDetails = document.querySelector('.user-profile');
 userIcon.addEventListener("click",()=>{

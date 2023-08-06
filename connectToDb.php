@@ -23,6 +23,7 @@
     $dbname='ec_users';
     // $dbname='epiz_31889662_ec';
 
+    // Create Table
     $conn = mysqli_connect($servername, $server_user, $server_password,$dbname);
     $sql = "CREATE TABLE IF NOT EXISTS `users` (
         `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT,
